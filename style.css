@@ -344,39 +344,39 @@ header{
 .ny { color: #3d3c3a; }
 .atw { color: #c48660; }
 
-/* Título con logo */
 .classC {
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 80px 20px;
-    overflow: hidden;
     background-color: white;
+    padding: 4rem 1rem;
+    text-align: center;
+    overflow: hidden;
 }
 
+/* Fondo con logo */
 .classC .background-image {
     position: absolute;
-    bottom: 20%;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     width: 80%;
     max-width: 600px;
     height: auto;
-    background-image: url('./imagenes/LOG.png');
+    background-image: url('./imagenes/florida_I.png'); /* Usa la ruta nueva si cambiaste el archivo */
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center bottom;
-    opacity: 0.2;
+    background-position: center;
+    opacity: 0.08; /* Puedes ajustar la opacidad aquí */
     z-index: 0;
+    pointer-events: none; /* No bloquea clics */
 }
 
+/* Contenido encima del logo */
 .classC .text {
     position: relative;
     z-index: 1;
 }
 
+/* Tipografía responsiva */
 .classC .subtitulo {
     font-family: 'Oswald', sans-serif;
     font-size: clamp(14px, 3vw, 24px);
